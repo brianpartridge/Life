@@ -23,6 +23,10 @@
 		BD009A331BDDACBB0015AF7D /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A321BDDACBB0015AF7D /* BoardTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BD009A371BDDB18E0015AF7D /* Cell+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A361BDDB18E0015AF7D /* Cell+Count.swift */; settings = {ASSET_TAGS = (); }; };
 		BD009A3A1BDDB7D90015AF7D /* ConwayRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A391BDDB7D90015AF7D /* ConwayRuleTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BD9732171BDDC64200B1D986 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732161BDDC64200B1D986 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
+		BD9732191BDDC65400B1D986 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732181BDDC65400B1D986 /* GameTests.swift */; settings = {ASSET_TAGS = (); }; };
+		BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */; settings = {ASSET_TAGS = (); }; };
+		BD97321F1BDDCE1700B1D986 /* Board+SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */; settings = {ASSET_TAGS = (); }; };
 		BDE53FC71BDDA44A0046C609 /* Life.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE53FC61BDDA44A0046C609 /* Life.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDE53FCE1BDDA44A0046C609 /* Life.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE53FC31BDDA44A0046C609 /* Life.framework */; };
 		BDE53FD31BDDA44A0046C609 /* LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE53FD21BDDA44A0046C609 /* LifeTests.swift */; };
@@ -64,6 +68,10 @@
 		BD009A321BDDACBB0015AF7D /* BoardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardTests.swift; path = LifeTests/BoardTests.swift; sourceTree = SOURCE_ROOT; };
 		BD009A361BDDB18E0015AF7D /* Cell+Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Count.swift"; sourceTree = "<group>"; };
 		BD009A391BDDB7D90015AF7D /* ConwayRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConwayRuleTests.swift; sourceTree = "<group>"; };
+		BD9732161BDDC64200B1D986 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		BD9732181BDDC65400B1D986 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Sequence.swift"; sourceTree = "<group>"; };
+		BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+SequenceTests.swift"; path = "LifeTests/Board+SequenceTests.swift"; sourceTree = SOURCE_ROOT; };
 		BDE53FC31BDDA44A0046C609 /* Life.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Life.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE53FC61BDDA44A0046C609 /* Life.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Life.h; sourceTree = "<group>"; };
 		BDE53FC81BDDA44A0046C609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 				BD009A341BDDACC30015AF7D /* Tests */,
 				BD009A061BDDA4BD0015AF7D /* Board.swift */,
 				BD009A071BDDA4BD0015AF7D /* Cell.swift */,
+				BD9732161BDDC64200B1D986 /* Game.swift */,
 				BD009A081BDDA4BD0015AF7D /* Geometry.swift */,
 				BD009A091BDDA4BD0015AF7D /* Rule.swift */,
 			);
@@ -125,6 +134,7 @@
 				BD009A351BDDACCD0015AF7D /* Tests */,
 				BD009A121BDDA54D0015AF7D /* Board+Neighbors.swift */,
 				BD009A141BDDA5880015AF7D /* Board+Random.swift */,
+				BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */,
 				BD009A361BDDB18E0015AF7D /* Cell+Count.swift */,
 			);
 			name = Extensions;
@@ -147,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				BD009A321BDDACBB0015AF7D /* BoardTests.swift */,
+				BD9732181BDDC65400B1D986 /* GameTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				BD009A301BDDACA00015AF7D /* Board+NeighborsTests.swift */,
+				BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -360,9 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD009A131BDDA54D0015AF7D /* Board+Neighbors.swift in Sources */,
+				BD9732171BDDC64200B1D986 /* Game.swift in Sources */,
 				BD009A0A1BDDA4BD0015AF7D /* Board.swift in Sources */,
 				BD009A151BDDA5880015AF7D /* Board+Random.swift in Sources */,
 				BD009A0D1BDDA4BD0015AF7D /* Rule.swift in Sources */,
+				BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */,
 				BD009A101BDDA4E90015AF7D /* ConwayRule.swift in Sources */,
 				BD009A0C1BDDA4BD0015AF7D /* Geometry.swift in Sources */,
 				BD009A0B1BDDA4BD0015AF7D /* Cell.swift in Sources */,
@@ -375,9 +389,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD009A3A1BDDB7D90015AF7D /* ConwayRuleTests.swift in Sources */,
+				BD97321F1BDDCE1700B1D986 /* Board+SequenceTests.swift in Sources */,
 				BD009A311BDDACA00015AF7D /* Board+NeighborsTests.swift in Sources */,
 				BD009A331BDDACBB0015AF7D /* BoardTests.swift in Sources */,
 				BDE53FD31BDDA44A0046C609 /* LifeTests.swift in Sources */,
+				BD9732191BDDC65400B1D986 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +612,7 @@
 				BD009A2D1BDDAAEB0015AF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDE53FBD1BDDA44A0046C609 /* Build configuration list for PBXProject "Life" */ = {
 			isa = XCConfigurationList;
