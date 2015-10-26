@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Game Of Life.xcscheme</key>
+		<key>Life.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BDE53F951BDD77FE0046C609</key>
+		<key>BDE53FC21BDDA44A0046C609</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDE53F9F1BDD77FE0046C609</key>
+		<key>BDE53FCC1BDDA44A0046C609</key>
 		<dict>
 			<key>primary</key>
 			<true/>
