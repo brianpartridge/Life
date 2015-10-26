@@ -23,23 +23,35 @@ class Board_NeighborsTests: XCTestCase {
         // Dead
         do {
             let style = EdgeCellNeighborStyle.Dead
-            XCTAssertEqual(neighborsOfCellAtCoordinate(topLeft, board: board, edgeHandlingStyle: style),
-                [.Dead, .Dead, .Dead, .Dead, .Alive, .Dead, .Alive, .Alive])
-            XCTAssertEqual(neighborsOfCellAtCoordinate(center, board: board, edgeHandlingStyle: style),
-                [.Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive])
-            XCTAssertEqual(neighborsOfCellAtCoordinate(bottomRight, board: board, edgeHandlingStyle: style),
-                [.Alive, .Alive, .Dead, .Alive, .Dead, .Dead, .Dead, .Dead])
+            XCTAssertEqual(neighborsOfCellAtCoordinate(topLeft, board: board, edgeHandlingStyle: style), [
+                .Dead, .Dead,  .Dead,
+                .Dead,         .Alive,
+                .Dead, .Alive, .Alive])
+            XCTAssertEqual(neighborsOfCellAtCoordinate(center, board: board, edgeHandlingStyle: style), [
+                .Alive, .Alive, .Alive,
+                .Alive,         .Alive,
+                .Alive, .Alive, .Alive])
+            XCTAssertEqual(neighborsOfCellAtCoordinate(bottomRight, board: board, edgeHandlingStyle: style), [
+                .Alive, .Alive, .Dead,
+                .Alive,         .Dead,
+                .Dead,  .Dead,  .Dead])
         }
         
         // Wrap
         do {
             let style = EdgeCellNeighborStyle.Wrap
-            XCTAssertEqual(neighborsOfCellAtCoordinate(topLeft, board: board, edgeHandlingStyle: style),
-                [.Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive])
-            XCTAssertEqual(neighborsOfCellAtCoordinate(center, board: board, edgeHandlingStyle: style),
-                [.Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive])
-            XCTAssertEqual(neighborsOfCellAtCoordinate(bottomRight, board: board, edgeHandlingStyle: style),
-                [.Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive, .Alive])
+            XCTAssertEqual(neighborsOfCellAtCoordinate(topLeft, board: board, edgeHandlingStyle: style), [
+                .Alive, .Alive, .Alive,
+                .Alive,         .Alive,
+                .Alive, .Alive, .Alive])
+            XCTAssertEqual(neighborsOfCellAtCoordinate(center, board: board, edgeHandlingStyle: style), [
+                .Alive, .Alive, .Alive,
+                .Alive,         .Alive,
+                .Alive, .Alive, .Alive])
+            XCTAssertEqual(neighborsOfCellAtCoordinate(bottomRight, board: board, edgeHandlingStyle: style), [
+                .Alive, .Alive, .Alive,
+                .Alive,         .Alive,
+                .Alive, .Alive, .Alive])
         }
     }
     

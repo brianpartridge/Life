@@ -19,7 +19,10 @@ class ConwayRuleTests: XCTestCase {
     // MARK: - Tests
     
     func test_dead_threeAliveNeighbors_becomesAlive() {
-        let board = Board(size: size, cells: [.Alive, .Alive, .Alive, .Dead, .Dead, .Dead, .Dead, .Dead, .Dead])
+        let board = Board(size: size, cells: [
+            .Alive, .Alive, .Alive,
+            .Dead,  .Dead,  .Dead,
+            .Dead,  .Dead,  .Dead])
         XCTAssertEqual(board.cellAtCoordinate(center), Cell.Dead)
         XCTAssertEqual(rule.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Alive)
     }
