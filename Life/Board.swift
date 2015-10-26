@@ -10,7 +10,7 @@ import Foundation
 
 
 /// A two dimensional collection of Cells, representing a point in time in a Game.
-public struct Board {
+public struct Board: Equatable {
 
     // MARK: - Public Properties
     
@@ -35,4 +35,9 @@ public struct Board {
         let index = (coordinate.y * size.width) + coordinate.x
         return cells[index]
     }
+}
+
+
+public func ==(left: Board, right: Board) -> Bool {
+    return left.size == right.size && left.cells == right.cells
 }

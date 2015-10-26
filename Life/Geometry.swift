@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Represents the two dimensional bounds of a Board.
-public struct Size {
+public struct Size: Equatable {
     
     // MARK: - Public Properties
     
@@ -31,6 +31,11 @@ public struct Size {
         self.width = width
         self.height = height
     }
+}
+
+
+public func ==(left: Size, right: Size) -> Bool {
+    return left.width == right.width && left.height == right.height
 }
 
 
