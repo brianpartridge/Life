@@ -10,42 +10,33 @@ import Foundation
 
 
 public struct Size {
+    
+    // MARK: - Public Properties
+    
     public let width: Int
     public let height: Int
-    
-    public func volume() -> Int {
+    public var volume: Int {
         return width * height
+    }
+    
+    // MARK: - Initializers
+    
+    public init(width: Int, height: Int) {
+        precondition(width > 0)
+        precondition(height > 0)
+        
+        self.width = width
+        self.height = height
     }
 }
 
 
-public struct Coordinate {
+public struct Coordinate: Equatable {
     public let x: Int
     public let y: Int
 }
 
 
-extension Coordinate: Equatable {}
 public func ==(left: Coordinate, right: Coordinate) -> Bool {
     return left.x == right.x && left.y == right.y
-}
-
-
-public func wrappedCoordiateForCoordinate(coordinate: Coordinate, inSize size: Size) -> Coordinate {
-    var x = coordinate.x
-    var y = coordinate.y
-    
-    if x < 0 {
-        x = size.width - 1
-    } else if x >= size.width {
-        x = 0
-    }
-    
-    if y < 0 {
-        y = size.height - 1
-    } else if y >= size.height {
-        y = 0
-    }
-    
-    return Coordinate(x: x, y: y)
 }

@@ -26,7 +26,7 @@ public struct ConwayRule: Rule {
         case (.Alive, Int.min..<2) : return .Dead
             
             // Overpopulation
-        case (.Alive, 4...Int.max): return .Dead
+        case (.Alive, 4..<Int.max): return .Dead
             
             // Reproduction
         case (.Dead, 3): return .Alive
@@ -38,12 +38,7 @@ public struct ConwayRule: Rule {
     // MARK: - Internal Methods
     
     internal func countOfAliveNeighborsOfCellAtCoordinate(coordinate: Coordinate, inBoard board: Board, edgeHandlingStyle: EdgeCellNeighborStyle) -> Int {
-        let neighbors = board.neighborsOfCellAtCoordinate(coordinate, edgeHandlingStyle: edgeHandlingStyle)
-        return neighbors.reduce(0, combine: { accumulator, next in
-            switch next {
-            case .Alive: return accumulator + 1
-            default: return accumulator
-            }
-        })
+        let neighbors = neighborsOfCellAtCoordinate(coordinate, board: board, edgeHandlingStyle: edgeHandlingStyle)
+        return countOfAliveCells(neighbors)
     }
 }

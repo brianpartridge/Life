@@ -10,9 +10,15 @@ import Foundation
 
 
 public enum EdgeCellNeighborStyle {
-    case Dead, Wrap
+    /// Neighbors beyond the edge of the board should be considered Dead.
+    case Dead
+    
+    /// Neighbors beyond the edge of the board should be wrap to the opposite edge of the board.
+    case Wrap
 }
 
+
+/// Returns the 8 neighbors of the cell at the coordinate.
 public func neighborsOfCellAtCoordinate(coordinate: Coordinate, board: Board, edgeHandlingStyle: EdgeCellNeighborStyle) -> [Cell] {
     var neighbors = [Cell]()
     
@@ -23,15 +29,49 @@ public func neighborsOfCellAtCoordinate(coordinate: Coordinate, board: Board, ed
             }
             
             let coordinate = Coordinate(x: i, y: j)
-            let wrappedCoordiate = wrappedCoordiateForCoordinate(coordinate, inSize: board.size)
-            let coordinateWraps = coordinate != wrappedCoordiate
+            let resolvedCoordinate = wrappedCoordiateForCoordinate(coordinate, inBoard: board)
+            let coordinateWraps = coordinate != resolvedCoordinate
             
             if coordinateWraps && edgeHandlingStyle == .Dead {
                 neighbors.append(.Dead)
             } else {
-                neighbors.append(board.cellAtCoordinate(coordinate))
+                neighbors.append(board.cellAtCoordinate(resolvedCoordinate))
             }
         }
     }
     return neighbors
+}
+
+/// Calculates the coordinate for the given coordinate in the g
+internal func wrappedCoordiateForCoordinate(coordinate: Coordinate, inBoard board: Board) -> Coordinate {
+    let size = board.size
+    var xWrapped = true
+    var yWrapped = true
+    var x = coordinate.x
+    var y = coordinate.y
+    
+    if x < 0 {
+        x = size.width + x
+    } else if x >= size.width {
+        x = x - size.width
+    } else {
+        xWrapped = false
+    }
+    
+    if y < 0 {
+        y = size.height + y
+    } else if y >= size.height {
+        y = y - size.height
+    } else {
+        yWrapped = false
+    }
+    
+    let coordinate = Coordinate(x: x, y: y)
+    if !xWrapped && !yWrapped {
+        // Nothing wrapped, return the coordinate.
+        return coordinate
+    }
+    
+    // Wrapping was necessary, recurse to handle any additional wrapping.
+    return wrappedCoordiateForCoordinate(coordinate, inBoard: board)
 }

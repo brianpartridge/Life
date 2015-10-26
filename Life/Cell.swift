@@ -9,6 +9,15 @@
 import Foundation
 
 
-public enum Cell {
+public enum Cell: Equatable {
     case Dead, Alive
+}
+
+
+public func ==(left: Cell, right: Cell) -> Bool {
+    switch (left, right) {
+    case (.Alive, .Alive): return true
+    case (.Dead, .Dead): return true
+    default: return false
+    }
 }

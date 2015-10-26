@@ -19,7 +19,7 @@ public struct Board {
     // MARK: - Initializers
     
     public init(size: Size, cells: [Cell]) {
-        precondition(size.volume() == cells.count)
+        precondition(size.volume == cells.count)
         
         self.size = size
         self.cells = cells
@@ -28,8 +28,8 @@ public struct Board {
     // MARK: - Public Methods
     
     public func cellAtCoordinate(coordinate: Coordinate) -> Cell {
-        precondition(coordinate.x > 0 && coordinate.x < size.width)
-        precondition(coordinate.y > 0 && coordinate.y < size.height)
+        precondition(coordinate.x >= 0 && coordinate.x < size.width)
+        precondition(coordinate.y >= 0 && coordinate.y < size.height)
         
         let index = (coordinate.y * size.width) + coordinate.x
         return cells[index]
