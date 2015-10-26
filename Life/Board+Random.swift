@@ -10,8 +10,8 @@ import Foundation
 
 
 public extension Board {
-    /// Generates a random board with the give population density.
-    /// @param populationDensity Approximate percentage of cells on the generate board which should be alive.
+    /// Generates a random Board with the give population density.
+    /// @param populationDensity Approximate percentage of Cells on the generated Board which should be alive.
     public static func randomBoard(size: Size, populationDensity: Float) -> Board {
         var cells = [Cell]()
         for _ in 0..<(size.volume) {

@@ -9,6 +9,7 @@
 @testable import Life
 import XCTest
 
+
 class Board_NeighborsTests: XCTestCase {
     
     func test_neighborsOfCellAtCoordinate() {

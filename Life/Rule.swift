@@ -9,6 +9,9 @@
 import Foundation
 
 
+/// Constraints that are evaluated against a Board in a Game.
 public protocol Rule {
-    func evaluateForCellAtCoordiante(coordinate: Coordinate, inBoard board: Board) -> Cell
+    
+    /// Evaluates the rule against a Cell, returning the calculated value.
+    func evaluateForCellAtCoordinate(coordinate: Coordinate, inBoard board: Board) -> Cell
 }

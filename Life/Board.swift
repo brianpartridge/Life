@@ -9,6 +9,7 @@
 import Foundation
 
 
+/// A two dimensional collection of Cells, representing a point in time in a Game.
 public struct Board {
 
     // MARK: - Public Properties

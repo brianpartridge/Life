@@ -9,6 +9,7 @@
 import Foundation
 
 
+/// A cell that is either alive or dead.
 public enum Cell: Equatable {
     case Dead, Alive
 }

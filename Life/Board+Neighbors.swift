@@ -10,15 +10,15 @@ import Foundation
 
 
 public enum EdgeCellNeighborStyle {
-    /// Neighbors beyond the edge of the board should be considered Dead.
+    /// Neighbors beyond the edge of the Board should be considered Dead.
     case Dead
     
-    /// Neighbors beyond the edge of the board should be wrap to the opposite edge of the board.
+    /// Neighbors beyond the edge of the Board should be wrap to the opposite edge of the Board.
     case Wrap
 }
 
 
-/// Returns the 8 neighbors of the cell at the coordinate.
+/// Returns the 8 neighbors of the Cell at the `coordinate`.
 public func neighborsOfCellAtCoordinate(coordinate: Coordinate, board: Board, edgeHandlingStyle: EdgeCellNeighborStyle) -> [Cell] {
     var neighbors = [Cell]()
     
@@ -42,7 +42,7 @@ public func neighborsOfCellAtCoordinate(coordinate: Coordinate, board: Board, ed
     return neighbors
 }
 
-/// Calculates the coordinate for the given coordinate in the g
+/// Calculates a `coordinate` within the given `board`'s bounds by wrapping around edges.
 internal func wrappedCoordiateForCoordinate(coordinate: Coordinate, inBoard board: Board) -> Coordinate {
     let size = board.size
     var xWrapped = true
