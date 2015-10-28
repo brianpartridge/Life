@@ -29,11 +29,14 @@ public struct Board: CustomStringConvertible, Equatable {
     // MARK: - Public Methods
     
     public func cellAtCoordinate(coordinate: Coordinate) -> Cell {
+        return cells[cellIndexForCoordinate(coordinate)]
+    }
+    
+    public func cellIndexForCoordinate(coordinate: Coordinate) -> Int {
         precondition(coordinate.x >= 0 && coordinate.x < size.width)
         precondition(coordinate.y >= 0 && coordinate.y < size.height)
         
-        let index = (coordinate.y * size.width) + coordinate.x
-        return cells[index]
+        return (coordinate.y * size.width) + coordinate.x
     }
     
     // MARK: - CustomStringConvertible
@@ -46,7 +49,7 @@ public struct Board: CustomStringConvertible, Equatable {
             if  columnIndex == 0 {
                 row = "|"
             }
-            row.appendContentsOf(" \(cell) ")
+            row.appendContentsOf("\(cell)")
             if columnIndex == size.width-1 {
                 row.appendContentsOf("|")
                 rows.append(row)
