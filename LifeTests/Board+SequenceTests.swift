@@ -13,7 +13,7 @@ import XCTest
 class Board_SequenceTests: XCTestCase {
 
     func test_generate() {
-        let board = Board.randomBoard(Size(width: 2, height: 2), populationDensity: 1)
+        let board = Board.fullBoard(Size(width: 2, height: 2))
         let expectedCoordinates = [
             Coordinate(x: 0, y: 0),
             Coordinate(x: 1, y: 0),

@@ -13,9 +13,7 @@ import XCTest
 class Board_NeighborsTests: XCTestCase {
     
     func test_neighborsOfCellAtCoordinate() {
-        let board = Board.randomBoard(Size(width: 3, height: 3), populationDensity: 1.0)
-        XCTAssertEqual(countOfAliveCells(board.cells), 9)
-        
+        let board = Board.fullBoard(Size(width: 3, height: 3))        
         let topLeft = Coordinate(x: 0, y: 0)
         let center = Coordinate(x: 1, y: 1)
         let bottomRight = Coordinate(x: 2, y: 2)
@@ -56,7 +54,7 @@ class Board_NeighborsTests: XCTestCase {
     }
     
     func test_wrappedCoordiateForCoordinate() {
-        let board = Board.randomBoard(Size(width: 10, height: 10), populationDensity: 1.0)
+        let board = Board.fullBoard(Size(width: 10, height: 10))
         
         // Within Bounds
         XCTAssertEqual(wrappedCoordiateForCoordinate(Coordinate(x: 0, y: 0), inBoard: board), Coordinate(x: 0, y: 0))

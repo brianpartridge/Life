@@ -23,4 +23,16 @@ public extension Board {
         let board = Board(size: size, cells: cells)
         return board
     }
+    
+    /// Generate a board filled with dead cells.
+    public static func emptyBoard(size: Size) -> Board {
+        let cells = [Cell](count: size.volume, repeatedValue: .Dead)
+        return Board(size: size, cells: cells)
+    }
+    
+    /// Generate a board filled with alive cells.
+    public static func fullBoard(size: Size) -> Board {
+        let cells = [Cell](count: size.volume, repeatedValue: .Alive)
+        return Board(size: size, cells: cells)
+    }
 }

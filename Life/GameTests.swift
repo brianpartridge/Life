@@ -12,8 +12,8 @@ import XCTest
 
 class GameTests: XCTestCase {
 
-    let fullBoard = Board.randomBoard(Size(width: 3, height: 3), populationDensity: 1)
-    let emptyBoard = Board.randomBoard(Size(width: 3, height: 3), populationDensity: 0)
+    let fullBoard = Board.fullBoard(Size(width: 3, height: 3))
+    let emptyBoard = Board.emptyBoard(Size(width: 3, height: 3))
     
     // MARK: - Tests
     
