@@ -9,10 +9,12 @@
     
     let conway = ConwayRule(edgeHandlingStyle: .Wrap)
     let board = Board.randomBoard(Size(width: 10, height: 10), populationDensity: 0.3)
-    let game = Game(board: board, rules: [conway])
+    let game = Game(board: board, rules: conway)
     for i in 0...100 {
-      print("\(game)")
+      print(game)
     }
+    
+See [Example.playground](Example.playground) for more.
 
 ## License
 [MIT](LICENSE)
