@@ -47,8 +47,17 @@ public func ==(left: Size, right: Size) -> Bool {
 
 /// Identifies a location two dimensional space.
 public struct Coordinate: CustomStringConvertible, Equatable {
+    // MARK: - Public Properties
+    
     public let x: Int
     public let y: Int
+    
+    // MARK: - Initializers
+    
+    public init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
     
     // MARK: - CustomStringConvertible
     
@@ -60,4 +69,8 @@ public struct Coordinate: CustomStringConvertible, Equatable {
 
 public func ==(left: Coordinate, right: Coordinate) -> Bool {
     return left.x == right.x && left.y == right.y
+}
+
+public func +(left: Coordinate, right: Coordinate) -> Coordinate {
+    return Coordinate(x: left.x + right.x, y: left.y + right.y)
 }

@@ -20,6 +20,12 @@ public struct ConwayRule: Rule {
     
     public let edgeHandlingStyle: EdgeCellNeighborStyle
     
+    // MARK: - Initializers
+    
+    public init(edgeHandlingStyle: EdgeCellNeighborStyle) {
+        self.edgeHandlingStyle = edgeHandlingStyle
+    }
+    
     // MARK: - Rule
     
     public func evaluateForCellAtCoordinate(coordinate: Coordinate, inBoard board: Board) -> Cell {
