@@ -10,7 +10,7 @@ import Foundation
 
 
 /// A two dimensional collection of Cells, representing a point in time in a Game.
-public struct Board: Equatable {
+public struct Board: CustomStringConvertible, Equatable {
 
     // MARK: - Public Properties
     
@@ -34,6 +34,25 @@ public struct Board: Equatable {
         
         let index = (coordinate.y * size.width) + coordinate.x
         return cells[index]
+    }
+    
+    // MARK: - CustomStringConvertible
+    
+    public var description: String {
+        var row = ""
+        var rows = [String]()
+        for (i, cell) in cells.enumerate() {
+            let columnIndex = i % size.width
+            if  columnIndex == 0 {
+                row = "|"
+            }
+            row.appendContentsOf(" \(cell) ")
+            if columnIndex == size.width-1 {
+                row.appendContentsOf("|")
+                rows.append(row)
+            }
+        }
+        return rows.joinWithSeparator("\n")
     }
 }
 

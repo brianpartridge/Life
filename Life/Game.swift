@@ -13,7 +13,7 @@ protocol GameType {
     func tick()
 }
 
-public struct Game {
+public struct Game: CustomStringConvertible {
 
     // MARK: - Public Properties
     
@@ -41,5 +41,11 @@ public struct Game {
         let newCells = board.map { rule.evaluateForCellAtCoordinate($0, inBoard: board) }
         currentBoard = Board(size: board.size, cells: newCells)
         tickCount++
+    }
+    
+    // MARK: - CustomStringConvertible
+    
+    public var description: String {
+        return "Generation: \(tickCount)\n\(board)"
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Represents the two dimensional bounds of a Board.
-public struct Size: Equatable {
+public struct Size: CustomStringConvertible, Equatable {
     
     // MARK: - Public Properties
     
@@ -31,6 +31,12 @@ public struct Size: Equatable {
         self.width = width
         self.height = height
     }
+    
+    // MARK: - CustomStringConvertible
+    
+    public var description: String {
+        return "w: \(width), h: \(height)"
+    }
 }
 
 
@@ -40,9 +46,15 @@ public func ==(left: Size, right: Size) -> Bool {
 
 
 /// Identifies a location two dimensional space.
-public struct Coordinate: Equatable {
+public struct Coordinate: CustomStringConvertible, Equatable {
     public let x: Int
     public let y: Int
+    
+    // MARK: - CustomStringConvertible
+    
+    public var description: String {
+        return "x: \(x), y: \(y)"
+    }
 }
 
 
