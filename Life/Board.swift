@@ -42,16 +42,19 @@ public struct Board: CustomStringConvertible, Equatable {
     // MARK: - CustomStringConvertible
     
     public var description: String {
+        let width = size.width
+        
         var row = ""
         var rows = [String]()
         for (i, cell) in cells.enumerate() {
-            let columnIndex = i % size.width
+            let columnIndex = i % width
             if  columnIndex == 0 {
-                row = "|"
+                row = ""
             }
+            
             row.appendContentsOf("\(cell)")
-            if columnIndex == size.width-1 {
-                row.appendContentsOf("|")
+            
+            if columnIndex == width-1 {
                 rows.append(row)
             }
         }
