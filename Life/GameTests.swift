@@ -22,12 +22,12 @@ class GameTests: XCTestCase {
         var game = Game(board: emptyBoard, rules: [rule])
         game.tick()
         XCTAssertEqual(game.initialBoard, emptyBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 1)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 1)
         game.tick()
         XCTAssertEqual(game.initialBoard, emptyBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 2)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 2)
     }
     
     func test_tick_full_passthrough() {
@@ -35,12 +35,12 @@ class GameTests: XCTestCase {
         var game = Game(board: fullBoard, rules: [rule])
         game.tick()
         XCTAssertEqual(game.initialBoard, fullBoard)
-        XCTAssertEqual(game.currentBoard, fullBoard)
-        XCTAssertEqual(game.tickCount, 1)
+        XCTAssertEqual(game.currentGeneration.board, fullBoard)
+        XCTAssertEqual(game.currentGeneration.number, 1)
         game.tick()
         XCTAssertEqual(game.initialBoard, fullBoard)
-        XCTAssertEqual(game.currentBoard, fullBoard)
-        XCTAssertEqual(game.tickCount, 2)
+        XCTAssertEqual(game.currentGeneration.board, fullBoard)
+        XCTAssertEqual(game.currentGeneration.number, 2)
     }
     
     func test_tick_empty_conway_dead() {
@@ -48,12 +48,12 @@ class GameTests: XCTestCase {
         var game = Game(board: emptyBoard, rules: [rule])
         game.tick()
         XCTAssertEqual(game.initialBoard, emptyBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 1)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 1)
         game.tick()
         XCTAssertEqual(game.initialBoard, emptyBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 2)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 2)
     }
     
     func test_tick_empty_conway_wrap() {
@@ -61,12 +61,12 @@ class GameTests: XCTestCase {
         var game = Game(board: emptyBoard, rules: [rule])
         game.tick()
         XCTAssertEqual(game.initialBoard, emptyBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 1)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 1)
         game.tick()
         XCTAssertEqual(game.initialBoard, emptyBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 2)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 2)
     }
     
     func test_tick_full_conway_dead() {
@@ -78,12 +78,12 @@ class GameTests: XCTestCase {
             .Alive, .Dead, .Alive])
         game.tick()
         XCTAssertEqual(game.initialBoard, fullBoard)
-        XCTAssertEqual(game.currentBoard, firstTickBoard)
-        XCTAssertEqual(game.tickCount, 1)
+        XCTAssertEqual(game.currentGeneration.board, firstTickBoard)
+        XCTAssertEqual(game.currentGeneration.number, 1)
         game.tick()
         XCTAssertEqual(game.initialBoard, fullBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 2)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 2)
     }
 
     func test_tick_full_conway_wrap() {
@@ -91,12 +91,12 @@ class GameTests: XCTestCase {
         var game = Game(board: fullBoard, rules: [rule])
         game.tick()
         XCTAssertEqual(game.initialBoard, fullBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 1)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 1)
         game.tick()
         XCTAssertEqual(game.initialBoard, fullBoard)
-        XCTAssertEqual(game.currentBoard, emptyBoard)
-        XCTAssertEqual(game.tickCount, 2)
+        XCTAssertEqual(game.currentGeneration.board, emptyBoard)
+        XCTAssertEqual(game.currentGeneration.number, 2)
     }
 
 }

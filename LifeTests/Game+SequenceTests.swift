@@ -21,7 +21,9 @@ class Game_SequenceTests: XCTestCase {
         let game = Game(board: board, rules: [rules])
         
         let generator = game.generate()
-        XCTAssertEqual(generator.next()!, board)
+        let generation = generator.next()!
+        XCTAssertEqual(generation.board, board)
+        XCTAssertEqual(generation.number, 0)
     }
     
     func test_generate_terminates() {
@@ -32,10 +34,12 @@ class Game_SequenceTests: XCTestCase {
         
         let generator = game.generate()
         let first = generator.next()!
-        XCTAssertEqual(first, board)
+        XCTAssertEqual(first.board, board)
+        XCTAssertEqual(first.number, 0)
         
         let second = generator.next()!
-        XCTAssertEqual(second, Board.emptyBoard(board.size))
+        XCTAssertEqual(second.board, Board.emptyBoard(board.size))
+        XCTAssertEqual(second.number, 1)
         
         let third = generator.next()
         XCTAssertNil(third)

@@ -10,7 +10,7 @@ import Foundation
 
 
 extension Game: SequenceType {
-    public typealias Generator = AnyGenerator<Board>
+    public typealias Generator = AnyGenerator<Generation>
     
     public func generate() -> Generator {
         var game = self
@@ -18,14 +18,14 @@ extension Game: SequenceType {
         return anyGenerator {
             if !hasReturnedInitialValue {
                 hasReturnedInitialValue = true
-                return game.initialBoard
+                return game.currentGeneration
             }
             
-            let previousBoard = game.currentBoard
+            let previousBoard = game.currentGeneration.board
             game.tick()
-            let generatedBoard = game.currentBoard
+            let generatedBoard = game.currentGeneration.board
             if previousBoard != generatedBoard {
-                return generatedBoard
+                return game.currentGeneration
             }
             
             return nil

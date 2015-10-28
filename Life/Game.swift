@@ -9,17 +9,12 @@
 import Foundation
 
 
-protocol GameType {
-    func tick()
-}
-
-public struct Game: CustomStringConvertible {
+public struct Game {
 
     // MARK: - Public Properties
     
     public let initialBoard: Board
-    public private(set) var currentBoard: Board
-    public private(set) var tickCount: Int = 0
+    public private(set) var currentGeneration: Generation
     
     public let rules: [Rule]
     
@@ -27,7 +22,7 @@ public struct Game: CustomStringConvertible {
     
     public init(board: Board, rules:[Rule]) {
         self.initialBoard = board
-        self.currentBoard = board
+        self.currentGeneration = Generation(number: 0, board: board)
         self.rules = rules
     }
     
@@ -37,15 +32,25 @@ public struct Game: CustomStringConvertible {
         // TODO: (brianpartridge) Evaluate multiple rules at once
         let rule = rules.last!
         
-        let board = currentBoard
+        let current = currentGeneration
+        let board = currentGeneration.board
         let newCells = board.map { rule.evaluateForCellAtCoordinate($0, inBoard: board) }
-        currentBoard = Board(size: board.size, cells: newCells)
-        tickCount++
+        let next = Generation(number: current.number+1, board: Board(size: board.size, cells: newCells))
+        currentGeneration = next
     }
+}
+
+
+/// Represents a snapshot of a single generation in a Game.
+public struct Generation: CustomStringConvertible {
+    // MARK: - Public Properties
     
-    // MARK: - CustomStringConvertible
+    public let number: Int
+    public let board: Board
+    
+    // MARK: - CustomStringConvertable
     
     public var description: String {
-        return "Generation: \(tickCount)\n\(board)"
+        return "Generation \(number)\n\(board.description)"
     }
 }
