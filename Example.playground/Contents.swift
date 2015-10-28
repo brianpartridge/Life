@@ -7,8 +7,8 @@ let origin = Coordinate(x: 0, y: 0)
 let size = Size(width: 10, height: 10)
 let board = boardByInsertingGliderAtCoordinate(origin, inBoard: Board.emptyBoard(size))
 
-let rules = ConwayRule(edgeHandlingStyle: .Dead)
-var game = Game(board: board, rules: [rules])
+let rules = ConwayRuleSet(edgeHandlingStyle: .Dead)
+var game = Game(board: board, rules: rules)
 
 game.forEach {
     XCPlaygroundPage.currentPage.captureValue($0.description, withIdentifier: "Generation \($0.number)")

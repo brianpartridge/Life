@@ -16,11 +16,11 @@ public struct Game {
     public let initialBoard: Board
     public private(set) var currentGeneration: Generation
     
-    public let rules: [Rule]
+    public let rules: RuleSet
     
     // MARK: - Initializers
     
-    public init(board: Board, rules:[Rule]) {
+    public init(board: Board, rules:RuleSet) {
         self.initialBoard = board
         self.currentGeneration = Generation(number: 0, board: board)
         self.rules = rules
@@ -29,12 +29,9 @@ public struct Game {
     // MARK: - Public Methods
     
     public mutating func tick() {
-        // TODO: (brianpartridge) Evaluate multiple rules at once
-        let rule = rules.last!
-        
         let current = currentGeneration
         let board = currentGeneration.board
-        let newCells = board.map { rule.evaluateForCellAtCoordinate($0, inBoard: board) }
+        let newCells = board.map { rules.evaluateForCellAtCoordinate($0, inBoard: board) }
         let next = Generation(number: current.number+1, board: Board(size: board.size, cells: newCells))
         currentGeneration = next
     }

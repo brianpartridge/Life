@@ -1,5 +1,5 @@
 //
-//  ConwayRule.swift
+//  ConwayRuleSet.swift
 //  Life
 //
 //  Created by Brian Partridge on 10/25/15.
@@ -14,7 +14,7 @@ import Foundation
 /// 2. Any live Cell with two or three live neighbors lives on to the next generation.
 /// 3. Any live Cell with more than three live neighbors dies, as if by over-population.
 /// 4. Any dead Cell with exactly three live neighbors becomes a live Cell, as if by reproduction.
-public struct ConwayRule: Rule {
+public struct ConwayRuleSet: RuleSet {
     
     // MARK: - Public Properties
     

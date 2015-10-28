@@ -1,5 +1,5 @@
 //
-//  ConwayRuleTests.swift
+//  ConwayRuleSetTests.swift
 //  Life
 //
 //  Created by Brian Partridge on 10/25/15.
@@ -14,7 +14,7 @@ class ConwayRuleTests: XCTestCase {
     
     let size = Size(width: 3, height: 3)
     let center = Coordinate(x: 1, y: 1)
-    let rule = ConwayRule(edgeHandlingStyle: .Wrap)
+    let rules = ConwayRuleSet(edgeHandlingStyle: .Wrap)
     
     // MARK: - Tests
     
@@ -24,7 +24,7 @@ class ConwayRuleTests: XCTestCase {
             .Dead,  .Dead,  .Dead,
             .Dead,  .Dead,  .Dead])
         XCTAssertEqual(board.cellAtCoordinate(center), Cell.Dead)
-        XCTAssertEqual(rule.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Alive)
+        XCTAssertEqual(rules.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Alive)
     }
     
     func test_dead_nonThreeAliveNeighbors_staysDead() {
@@ -35,7 +35,7 @@ class ConwayRuleTests: XCTestCase {
             
             let board = threeByThreeBoard(.Dead, aliveNeighborCount: aliveNeighborCount)
             XCTAssertEqual(board.cellAtCoordinate(center), Cell.Dead)
-            XCTAssertEqual(rule.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Dead)
+            XCTAssertEqual(rules.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Dead)
         }
     }
     
@@ -43,7 +43,7 @@ class ConwayRuleTests: XCTestCase {
         for aliveNeighborCount in 0..<2 {
             let board = threeByThreeBoard(.Alive, aliveNeighborCount: aliveNeighborCount)
             XCTAssertEqual(board.cellAtCoordinate(center), Cell.Alive)
-            XCTAssertEqual(rule.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Dead)
+            XCTAssertEqual(rules.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Dead)
         }
     }
     
@@ -51,7 +51,7 @@ class ConwayRuleTests: XCTestCase {
         for aliveNeighborCount in 2...3 {
             let board = threeByThreeBoard(.Alive, aliveNeighborCount: aliveNeighborCount)
             XCTAssertEqual(board.cellAtCoordinate(center), Cell.Alive)
-            XCTAssertEqual(rule.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Alive)
+            XCTAssertEqual(rules.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Alive)
         }
     }
     
@@ -59,7 +59,7 @@ class ConwayRuleTests: XCTestCase {
         for aliveNeighborCount in 4..<size.volume {
             let board = threeByThreeBoard(.Alive, aliveNeighborCount: aliveNeighborCount)
             XCTAssertEqual(board.cellAtCoordinate(center), Cell.Alive)
-            XCTAssertEqual(rule.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Dead)
+            XCTAssertEqual(rules.evaluateForCellAtCoordinate(center, inBoard: board), Cell.Dead)
         }
     }
     

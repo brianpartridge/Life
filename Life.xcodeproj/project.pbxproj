@@ -10,8 +10,8 @@
 		BD009A0A1BDDA4BD0015AF7D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A061BDDA4BD0015AF7D /* Board.swift */; };
 		BD009A0B1BDDA4BD0015AF7D /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A071BDDA4BD0015AF7D /* Cell.swift */; };
 		BD009A0C1BDDA4BD0015AF7D /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A081BDDA4BD0015AF7D /* Geometry.swift */; };
-		BD009A0D1BDDA4BD0015AF7D /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A091BDDA4BD0015AF7D /* Rule.swift */; };
-		BD009A101BDDA4E90015AF7D /* ConwayRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A0F1BDDA4E90015AF7D /* ConwayRule.swift */; };
+		BD009A0D1BDDA4BD0015AF7D /* RuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A091BDDA4BD0015AF7D /* RuleSet.swift */; };
+		BD009A101BDDA4E90015AF7D /* ConwayRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A0F1BDDA4E90015AF7D /* ConwayRuleSet.swift */; };
 		BD009A131BDDA54D0015AF7D /* Board+Neighbors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A121BDDA54D0015AF7D /* Board+Neighbors.swift */; };
 		BD009A151BDDA5880015AF7D /* Board+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A141BDDA5880015AF7D /* Board+Random.swift */; };
 		BD009A1F1BDDAAEB0015AF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A1E1BDDAAEB0015AF7D /* AppDelegate.swift */; };
@@ -22,7 +22,7 @@
 		BD009A311BDDACA00015AF7D /* Board+NeighborsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A301BDDACA00015AF7D /* Board+NeighborsTests.swift */; };
 		BD009A331BDDACBB0015AF7D /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A321BDDACBB0015AF7D /* BoardTests.swift */; };
 		BD009A371BDDB18E0015AF7D /* Cell+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A361BDDB18E0015AF7D /* Cell+Count.swift */; };
-		BD009A3A1BDDB7D90015AF7D /* ConwayRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A391BDDB7D90015AF7D /* ConwayRuleTests.swift */; };
+		BD009A3A1BDDB7D90015AF7D /* ConwayRuleSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A391BDDB7D90015AF7D /* ConwayRuleSetTests.swift */; };
 		BD9732171BDDC64200B1D986 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732161BDDC64200B1D986 /* Game.swift */; };
 		BD9732191BDDC65400B1D986 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732181BDDC65400B1D986 /* GameTests.swift */; };
 		BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */; };
@@ -57,8 +57,8 @@
 		BD009A061BDDA4BD0015AF7D /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		BD009A071BDDA4BD0015AF7D /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		BD009A081BDDA4BD0015AF7D /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
-		BD009A091BDDA4BD0015AF7D /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
-		BD009A0F1BDDA4E90015AF7D /* ConwayRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConwayRule.swift; sourceTree = "<group>"; };
+		BD009A091BDDA4BD0015AF7D /* RuleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleSet.swift; sourceTree = "<group>"; };
+		BD009A0F1BDDA4E90015AF7D /* ConwayRuleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConwayRuleSet.swift; sourceTree = "<group>"; };
 		BD009A121BDDA54D0015AF7D /* Board+Neighbors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Neighbors.swift"; sourceTree = "<group>"; };
 		BD009A141BDDA5880015AF7D /* Board+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Random.swift"; sourceTree = "<group>"; };
 		BD009A1C1BDDAAEB0015AF7D /* TestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +71,7 @@
 		BD009A301BDDACA00015AF7D /* Board+NeighborsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+NeighborsTests.swift"; path = "LifeTests/Board+NeighborsTests.swift"; sourceTree = SOURCE_ROOT; };
 		BD009A321BDDACBB0015AF7D /* BoardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardTests.swift; path = LifeTests/BoardTests.swift; sourceTree = SOURCE_ROOT; };
 		BD009A361BDDB18E0015AF7D /* Cell+Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Count.swift"; sourceTree = "<group>"; };
-		BD009A391BDDB7D90015AF7D /* ConwayRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConwayRuleTests.swift; sourceTree = "<group>"; };
+		BD009A391BDDB7D90015AF7D /* ConwayRuleSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConwayRuleSetTests.swift; sourceTree = "<group>"; };
 		BD9732161BDDC64200B1D986 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		BD9732181BDDC65400B1D986 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Sequence.swift"; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				BD009A071BDDA4BD0015AF7D /* Cell.swift */,
 				BD9732161BDDC64200B1D986 /* Game.swift */,
 				BD009A081BDDA4BD0015AF7D /* Geometry.swift */,
-				BD009A091BDDA4BD0015AF7D /* Rule.swift */,
+				BD009A091BDDA4BD0015AF7D /* RuleSet.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				BD009A381BDDB7C80015AF7D /* Tests */,
-				BD009A0F1BDDA4E90015AF7D /* ConwayRule.swift */,
+				BD009A0F1BDDA4E90015AF7D /* ConwayRuleSet.swift */,
 			);
 			name = Conway;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 		BD009A381BDDB7C80015AF7D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BD009A391BDDB7D90015AF7D /* ConwayRuleTests.swift */,
+				BD009A391BDDB7D90015AF7D /* ConwayRuleSetTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -388,9 +388,9 @@
 				BD9732171BDDC64200B1D986 /* Game.swift in Sources */,
 				BD009A0A1BDDA4BD0015AF7D /* Board.swift in Sources */,
 				BD009A151BDDA5880015AF7D /* Board+Random.swift in Sources */,
-				BD009A0D1BDDA4BD0015AF7D /* Rule.swift in Sources */,
+				BD009A0D1BDDA4BD0015AF7D /* RuleSet.swift in Sources */,
 				BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */,
-				BD009A101BDDA4E90015AF7D /* ConwayRule.swift in Sources */,
+				BD009A101BDDA4E90015AF7D /* ConwayRuleSet.swift in Sources */,
 				BD009A0C1BDDA4BD0015AF7D /* Geometry.swift in Sources */,
 				BD009A0B1BDDA4BD0015AF7D /* Cell.swift in Sources */,
 				BD009A371BDDB18E0015AF7D /* Cell+Count.swift in Sources */,
@@ -401,7 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD009A3A1BDDB7D90015AF7D /* ConwayRuleTests.swift in Sources */,
+				BD009A3A1BDDB7D90015AF7D /* ConwayRuleSetTests.swift in Sources */,
 				BD97321F1BDDCE1700B1D986 /* Board+SequenceTests.swift in Sources */,
 				BDFB99691BE0564F0003CC0C /* Board+RandomTests.swift in Sources */,
 				BDFB99651BE04D420003CC0C /* Game+SequenceTests.swift in Sources */,
