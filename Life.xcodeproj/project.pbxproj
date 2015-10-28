@@ -33,6 +33,7 @@
 		BDFB99631BE04B5F0003CC0C /* Game+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB99621BE04B5F0003CC0C /* Game+Sequence.swift */; };
 		BDFB99651BE04D420003CC0C /* Game+SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB99641BE04D420003CC0C /* Game+SequenceTests.swift */; };
 		BDFB99671BE053000003CC0C /* Cell+CountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB99661BE053000003CC0C /* Cell+CountTests.swift */; };
+		BDFB99691BE0564F0003CC0C /* Board+RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB99681BE0564F0003CC0C /* Board+RandomTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		BDFB99621BE04B5F0003CC0C /* Game+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+Sequence.swift"; sourceTree = "<group>"; };
 		BDFB99641BE04D420003CC0C /* Game+SequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+SequenceTests.swift"; path = "LifeTests/Game+SequenceTests.swift"; sourceTree = SOURCE_ROOT; };
 		BDFB99661BE053000003CC0C /* Cell+CountTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+CountTests.swift"; sourceTree = "<group>"; };
+		BDFB99681BE0564F0003CC0C /* Board+RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+RandomTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				BD009A301BDDACA00015AF7D /* Board+NeighborsTests.swift */,
+				BDFB99681BE0564F0003CC0C /* Board+RandomTests.swift */,
 				BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */,
 				BDFB99661BE053000003CC0C /* Cell+CountTests.swift */,
 				BDFB99641BE04D420003CC0C /* Game+SequenceTests.swift */,
@@ -400,6 +403,7 @@
 			files = (
 				BD009A3A1BDDB7D90015AF7D /* ConwayRuleTests.swift in Sources */,
 				BD97321F1BDDCE1700B1D986 /* Board+SequenceTests.swift in Sources */,
+				BDFB99691BE0564F0003CC0C /* Board+RandomTests.swift in Sources */,
 				BDFB99651BE04D420003CC0C /* Game+SequenceTests.swift in Sources */,
 				BD009A311BDDACA00015AF7D /* Board+NeighborsTests.swift in Sources */,
 				BD009A331BDDACBB0015AF7D /* BoardTests.swift in Sources */,

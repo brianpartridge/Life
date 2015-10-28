@@ -12,16 +12,8 @@ import XCTest
 
 class Cell_CountTests: XCTestCase {
     
-    let size = Size(width: 3, height: 3)
-    
-    // MARK: - Tests
-
-    func test_emptyBoard() {
-        XCTAssertEqual(countOfAliveCells(Board.emptyBoard(size).cells), 0)
-    }
-    
-    func test_fullBoard() {
-        XCTAssertEqual(countOfAliveCells(Board.fullBoard(size).cells), 9)
+    func test_countOfAliveCells() {
+        XCTAssertEqual(countOfAliveCells([.Alive, .Dead, .Alive]), 2)
     }
 
 }
