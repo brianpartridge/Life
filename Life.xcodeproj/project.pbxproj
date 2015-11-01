@@ -23,6 +23,18 @@
 		BD009A331BDDACBB0015AF7D /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A321BDDACBB0015AF7D /* BoardTests.swift */; };
 		BD009A371BDDB18E0015AF7D /* Cell+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A361BDDB18E0015AF7D /* Cell+Count.swift */; };
 		BD009A3A1BDDB7D90015AF7D /* ConwayRuleSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A391BDDB7D90015AF7D /* ConwayRuleSetTests.swift */; };
+		BD1413A81BE65EBE00835675 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413A71BE65EBE00835675 /* Pattern.swift */; };
+		BD1413AA1BE65F1A00835675 /* Glider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413A91BE65F1A00835675 /* Glider.swift */; };
+		BD1413AC1BE660D500835675 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413AB1BE660D500835675 /* Block.swift */; };
+		BD1413AE1BE660E000835675 /* Beehive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413AD1BE660E000835675 /* Beehive.swift */; };
+		BD1413B01BE660EA00835675 /* Loaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413AF1BE660EA00835675 /* Loaf.swift */; };
+		BD1413B21BE660F300835675 /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B11BE660F300835675 /* Boat.swift */; };
+		BD1413B41BE6610900835675 /* LightweightSpaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B31BE6610900835675 /* LightweightSpaceship.swift */; };
+		BD1413B61BE661C600835675 /* Blinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B51BE661C600835675 /* Blinker.swift */; };
+		BD1413B81BE661D000835675 /* Toad.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B71BE661D000835675 /* Toad.swift */; };
+		BD1413BA1BE661DB00835675 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B91BE661DB00835675 /* Beacon.swift */; };
+		BD1413BC1BE664A600835675 /* Board+Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413BB1BE664A600835675 /* Board+Pattern.swift */; };
+		BD1413BE1BE6740D00835675 /* Board+PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413BD1BE6740D00835675 /* Board+PatternTests.swift */; };
 		BD9732171BDDC64200B1D986 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732161BDDC64200B1D986 /* Game.swift */; };
 		BD9732191BDDC65400B1D986 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732181BDDC65400B1D986 /* GameTests.swift */; };
 		BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */; };
@@ -72,6 +84,18 @@
 		BD009A321BDDACBB0015AF7D /* BoardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardTests.swift; path = LifeTests/BoardTests.swift; sourceTree = SOURCE_ROOT; };
 		BD009A361BDDB18E0015AF7D /* Cell+Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Count.swift"; sourceTree = "<group>"; };
 		BD009A391BDDB7D90015AF7D /* ConwayRuleSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConwayRuleSetTests.swift; sourceTree = "<group>"; };
+		BD1413A71BE65EBE00835675 /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		BD1413A91BE65F1A00835675 /* Glider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glider.swift; sourceTree = "<group>"; };
+		BD1413AB1BE660D500835675 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		BD1413AD1BE660E000835675 /* Beehive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beehive.swift; sourceTree = "<group>"; };
+		BD1413AF1BE660EA00835675 /* Loaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loaf.swift; sourceTree = "<group>"; };
+		BD1413B11BE660F300835675 /* Boat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boat.swift; sourceTree = "<group>"; };
+		BD1413B31BE6610900835675 /* LightweightSpaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightweightSpaceship.swift; sourceTree = "<group>"; };
+		BD1413B51BE661C600835675 /* Blinker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blinker.swift; sourceTree = "<group>"; };
+		BD1413B71BE661D000835675 /* Toad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toad.swift; sourceTree = "<group>"; };
+		BD1413B91BE661DB00835675 /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		BD1413BB1BE664A600835675 /* Board+Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Pattern.swift"; sourceTree = "<group>"; };
+		BD1413BD1BE6740D00835675 /* Board+PatternTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+PatternTests.swift"; path = "LifeTests/Board+PatternTests.swift"; sourceTree = SOURCE_ROOT; };
 		BD9732161BDDC64200B1D986 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		BD9732181BDDC65400B1D986 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Sequence.swift"; sourceTree = "<group>"; };
@@ -141,6 +165,7 @@
 			children = (
 				BD009A351BDDACCD0015AF7D /* Tests */,
 				BD009A121BDDA54D0015AF7D /* Board+Neighbors.swift */,
+				BD1413BB1BE664A600835675 /* Board+Pattern.swift */,
 				BD009A141BDDA5880015AF7D /* Board+Random.swift */,
 				BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */,
 				BD009A361BDDB18E0015AF7D /* Cell+Count.swift */,
@@ -175,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BD009A301BDDACA00015AF7D /* Board+NeighborsTests.swift */,
+				BD1413BD1BE6740D00835675 /* Board+PatternTests.swift */,
 				BDFB99681BE0564F0003CC0C /* Board+RandomTests.swift */,
 				BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */,
 				BDFB99661BE053000003CC0C /* Cell+CountTests.swift */,
@@ -189,6 +215,47 @@
 				BD009A391BDDB7D90015AF7D /* ConwayRuleSetTests.swift */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		BD1413A31BE65E6900835675 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				BD1413A51BE65E8400835675 /* Oscillators */,
+				BD1413A61BE65E9300835675 /* Spaceships */,
+				BD1413A41BE65E7600835675 /* Still Lifes */,
+				BD1413A71BE65EBE00835675 /* Pattern.swift */,
+			);
+			name = Patterns;
+			sourceTree = "<group>";
+		};
+		BD1413A41BE65E7600835675 /* Still Lifes */ = {
+			isa = PBXGroup;
+			children = (
+				BD1413AD1BE660E000835675 /* Beehive.swift */,
+				BD1413AB1BE660D500835675 /* Block.swift */,
+				BD1413B11BE660F300835675 /* Boat.swift */,
+				BD1413AF1BE660EA00835675 /* Loaf.swift */,
+			);
+			name = "Still Lifes";
+			sourceTree = "<group>";
+		};
+		BD1413A51BE65E8400835675 /* Oscillators */ = {
+			isa = PBXGroup;
+			children = (
+				BD1413B91BE661DB00835675 /* Beacon.swift */,
+				BD1413B51BE661C600835675 /* Blinker.swift */,
+				BD1413B71BE661D000835675 /* Toad.swift */,
+			);
+			name = Oscillators;
+			sourceTree = "<group>";
+		};
+		BD1413A61BE65E9300835675 /* Spaceships */ = {
+			isa = PBXGroup;
+			children = (
+				BD1413A91BE65F1A00835675 /* Glider.swift */,
+				BD1413B31BE6610900835675 /* LightweightSpaceship.swift */,
+			);
+			name = Spaceships;
 			sourceTree = "<group>";
 		};
 		BDE53FB91BDDA44A0046C609 = {
@@ -214,6 +281,7 @@
 		BDE53FC51BDDA44A0046C609 /* Life */ = {
 			isa = PBXGroup;
 			children = (
+				BD1413A31BE65E6900835675 /* Patterns */,
 				BD009A0E1BDDA4C50015AF7D /* Conway */,
 				BD009A111BDDA53A0015AF7D /* Extensions */,
 				BD009A051BDDA4A90015AF7D /* Models */,
@@ -384,14 +452,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD009A131BDDA54D0015AF7D /* Board+Neighbors.swift in Sources */,
+				BD1413AC1BE660D500835675 /* Block.swift in Sources */,
 				BDFB99631BE04B5F0003CC0C /* Game+Sequence.swift in Sources */,
 				BD9732171BDDC64200B1D986 /* Game.swift in Sources */,
 				BD009A0A1BDDA4BD0015AF7D /* Board.swift in Sources */,
 				BD009A151BDDA5880015AF7D /* Board+Random.swift in Sources */,
 				BD009A0D1BDDA4BD0015AF7D /* RuleSet.swift in Sources */,
+				BD1413B01BE660EA00835675 /* Loaf.swift in Sources */,
+				BD1413AE1BE660E000835675 /* Beehive.swift in Sources */,
+				BD1413BC1BE664A600835675 /* Board+Pattern.swift in Sources */,
+				BD1413B81BE661D000835675 /* Toad.swift in Sources */,
+				BD1413B61BE661C600835675 /* Blinker.swift in Sources */,
+				BD1413BA1BE661DB00835675 /* Beacon.swift in Sources */,
+				BD1413A81BE65EBE00835675 /* Pattern.swift in Sources */,
+				BD1413AA1BE65F1A00835675 /* Glider.swift in Sources */,
 				BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */,
+				BD1413B21BE660F300835675 /* Boat.swift in Sources */,
 				BD009A101BDDA4E90015AF7D /* ConwayRuleSet.swift in Sources */,
 				BD009A0C1BDDA4BD0015AF7D /* Geometry.swift in Sources */,
+				BD1413B41BE6610900835675 /* LightweightSpaceship.swift in Sources */,
 				BD009A0B1BDDA4BD0015AF7D /* Cell.swift in Sources */,
 				BD009A371BDDB18E0015AF7D /* Cell+Count.swift in Sources */,
 			);
@@ -402,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD009A3A1BDDB7D90015AF7D /* ConwayRuleSetTests.swift in Sources */,
+				BD1413BE1BE6740D00835675 /* Board+PatternTests.swift in Sources */,
 				BD97321F1BDDCE1700B1D986 /* Board+SequenceTests.swift in Sources */,
 				BDFB99691BE0564F0003CC0C /* Board+RandomTests.swift in Sources */,
 				BDFB99651BE04D420003CC0C /* Game+SequenceTests.swift in Sources */,
