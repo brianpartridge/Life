@@ -39,6 +39,29 @@
 		BD9732191BDDC65400B1D986 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732181BDDC65400B1D986 /* GameTests.swift */; };
 		BD97321B1BDDCDD800B1D986 /* Board+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */; };
 		BD97321F1BDDCE1700B1D986 /* Board+SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */; };
+		BDADD29E1BE6E2DF0002CC8C /* Board+Neighbors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A121BDDA54D0015AF7D /* Board+Neighbors.swift */; };
+		BDADD29F1BE6E2DF0002CC8C /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413AB1BE660D500835675 /* Block.swift */; };
+		BDADD2A01BE6E2DF0002CC8C /* Game+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB99621BE04B5F0003CC0C /* Game+Sequence.swift */; };
+		BDADD2A11BE6E2DF0002CC8C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9732161BDDC64200B1D986 /* Game.swift */; };
+		BDADD2A21BE6E2DF0002CC8C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A061BDDA4BD0015AF7D /* Board.swift */; };
+		BDADD2A31BE6E2DF0002CC8C /* Board+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A141BDDA5880015AF7D /* Board+Random.swift */; };
+		BDADD2A41BE6E2DF0002CC8C /* RuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A091BDDA4BD0015AF7D /* RuleSet.swift */; };
+		BDADD2A51BE6E2DF0002CC8C /* Loaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413AF1BE660EA00835675 /* Loaf.swift */; };
+		BDADD2A61BE6E2DF0002CC8C /* Beehive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413AD1BE660E000835675 /* Beehive.swift */; };
+		BDADD2A71BE6E2DF0002CC8C /* Board+Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413BB1BE664A600835675 /* Board+Pattern.swift */; };
+		BDADD2A81BE6E2DF0002CC8C /* Toad.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B71BE661D000835675 /* Toad.swift */; };
+		BDADD2A91BE6E2DF0002CC8C /* Blinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B51BE661C600835675 /* Blinker.swift */; };
+		BDADD2AA1BE6E2DF0002CC8C /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B91BE661DB00835675 /* Beacon.swift */; };
+		BDADD2AB1BE6E2DF0002CC8C /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413A71BE65EBE00835675 /* Pattern.swift */; };
+		BDADD2AC1BE6E2DF0002CC8C /* Glider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413A91BE65F1A00835675 /* Glider.swift */; };
+		BDADD2AD1BE6E2DF0002CC8C /* Board+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */; };
+		BDADD2AE1BE6E2DF0002CC8C /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B11BE660F300835675 /* Boat.swift */; };
+		BDADD2AF1BE6E2DF0002CC8C /* ConwayRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A0F1BDDA4E90015AF7D /* ConwayRuleSet.swift */; };
+		BDADD2B01BE6E2DF0002CC8C /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A081BDDA4BD0015AF7D /* Geometry.swift */; };
+		BDADD2B11BE6E2DF0002CC8C /* LightweightSpaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1413B31BE6610900835675 /* LightweightSpaceship.swift */; };
+		BDADD2B21BE6E2DF0002CC8C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A071BDDA4BD0015AF7D /* Cell.swift */; };
+		BDADD2B31BE6E2DF0002CC8C /* Cell+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD009A361BDDB18E0015AF7D /* Cell+Count.swift */; };
+		BDADD2B61BE6E2DF0002CC8C /* Life.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE53FC61BDDA44A0046C609 /* Life.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDE53FC71BDDA44A0046C609 /* Life.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE53FC61BDDA44A0046C609 /* Life.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDE53FCE1BDDA44A0046C609 /* Life.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE53FC31BDDA44A0046C609 /* Life.framework */; };
 		BDE53FD31BDDA44A0046C609 /* LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE53FD21BDDA44A0046C609 /* LifeTests.swift */; };
@@ -100,6 +123,8 @@
 		BD9732181BDDC65400B1D986 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		BD97321A1BDDCDD800B1D986 /* Board+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+Sequence.swift"; sourceTree = "<group>"; };
 		BD97321E1BDDCE1700B1D986 /* Board+SequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+SequenceTests.swift"; path = "LifeTests/Board+SequenceTests.swift"; sourceTree = SOURCE_ROOT; };
+		BDADD2BB1BE6E2DF0002CC8C /* LifeTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LifeTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDADD2BC1BE6E2DF0002CC8C /* Life copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Life copy-Info.plist"; path = "/Users/brianpartridge/src/scratch/Game Of Life/Life copy-Info.plist"; sourceTree = "<absolute>"; };
 		BDE53FC31BDDA44A0046C609 /* Life.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Life.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE53FC61BDDA44A0046C609 /* Life.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Life.h; sourceTree = "<group>"; };
 		BDE53FC81BDDA44A0046C609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +139,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		BD009A191BDDAAEB0015AF7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDADD2B41BE6E2DF0002CC8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +297,7 @@
 				BDE53FD11BDDA44A0046C609 /* LifeTests */,
 				BD009A1D1BDDAAEB0015AF7D /* TestHost */,
 				BDE53FC41BDDA44A0046C609 /* Products */,
+				BDADD2BC1BE6E2DF0002CC8C /* Life copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,6 +307,7 @@
 				BDE53FC31BDDA44A0046C609 /* Life.framework */,
 				BDE53FCD1BDDA44A0046C609 /* LifeTests.xctest */,
 				BD009A1C1BDDAAEB0015AF7D /* TestHost.app */,
+				BDADD2BB1BE6E2DF0002CC8C /* LifeTVOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,6 +337,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BDADD2B51BE6E2DF0002CC8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDADD2B61BE6E2DF0002CC8C /* Life.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDE53FC01BDDA44A0046C609 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +372,24 @@
 			productName = TestHost;
 			productReference = BD009A1C1BDDAAEB0015AF7D /* TestHost.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BDADD29C1BE6E2DF0002CC8C /* LifeTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDADD2B81BE6E2DF0002CC8C /* Build configuration list for PBXNativeTarget "LifeTVOS" */;
+			buildPhases = (
+				BDADD29D1BE6E2DF0002CC8C /* Sources */,
+				BDADD2B41BE6E2DF0002CC8C /* Frameworks */,
+				BDADD2B51BE6E2DF0002CC8C /* Headers */,
+				BDADD2B71BE6E2DF0002CC8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeTVOS;
+			productName = Life;
+			productReference = BDADD2BB1BE6E2DF0002CC8C /* LifeTVOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		BDE53FC21BDDA44A0046C609 /* Life */ = {
 			isa = PBXNativeTarget;
@@ -404,6 +464,7 @@
 			projectRoot = "";
 			targets = (
 				BDE53FC21BDDA44A0046C609 /* Life */,
+				BDADD29C1BE6E2DF0002CC8C /* LifeTVOS */,
 				BDE53FCC1BDDA44A0046C609 /* LifeTests */,
 				BD009A1B1BDDAAEB0015AF7D /* TestHost */,
 			);
@@ -418,6 +479,13 @@
 				BD009A291BDDAAEB0015AF7D /* LaunchScreen.storyboard in Resources */,
 				BD009A261BDDAAEB0015AF7D /* Assets.xcassets in Resources */,
 				BD009A241BDDAAEB0015AF7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDADD2B71BE6E2DF0002CC8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +512,35 @@
 			files = (
 				BD009A211BDDAAEB0015AF7D /* ViewController.swift in Sources */,
 				BD009A1F1BDDAAEB0015AF7D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDADD29D1BE6E2DF0002CC8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDADD29E1BE6E2DF0002CC8C /* Board+Neighbors.swift in Sources */,
+				BDADD29F1BE6E2DF0002CC8C /* Block.swift in Sources */,
+				BDADD2A01BE6E2DF0002CC8C /* Game+Sequence.swift in Sources */,
+				BDADD2A11BE6E2DF0002CC8C /* Game.swift in Sources */,
+				BDADD2A21BE6E2DF0002CC8C /* Board.swift in Sources */,
+				BDADD2A31BE6E2DF0002CC8C /* Board+Random.swift in Sources */,
+				BDADD2A41BE6E2DF0002CC8C /* RuleSet.swift in Sources */,
+				BDADD2A51BE6E2DF0002CC8C /* Loaf.swift in Sources */,
+				BDADD2A61BE6E2DF0002CC8C /* Beehive.swift in Sources */,
+				BDADD2A71BE6E2DF0002CC8C /* Board+Pattern.swift in Sources */,
+				BDADD2A81BE6E2DF0002CC8C /* Toad.swift in Sources */,
+				BDADD2A91BE6E2DF0002CC8C /* Blinker.swift in Sources */,
+				BDADD2AA1BE6E2DF0002CC8C /* Beacon.swift in Sources */,
+				BDADD2AB1BE6E2DF0002CC8C /* Pattern.swift in Sources */,
+				BDADD2AC1BE6E2DF0002CC8C /* Glider.swift in Sources */,
+				BDADD2AD1BE6E2DF0002CC8C /* Board+Sequence.swift in Sources */,
+				BDADD2AE1BE6E2DF0002CC8C /* Boat.swift in Sources */,
+				BDADD2AF1BE6E2DF0002CC8C /* ConwayRuleSet.swift in Sources */,
+				BDADD2B01BE6E2DF0002CC8C /* Geometry.swift in Sources */,
+				BDADD2B11BE6E2DF0002CC8C /* LightweightSpaceship.swift in Sources */,
+				BDADD2B21BE6E2DF0002CC8C /* Cell.swift in Sources */,
+				BDADD2B31BE6E2DF0002CC8C /* Cell+Count.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +646,43 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.peartreelabs.TestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDADD2B91BE6E2DF0002CC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Life-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peartreelabs.Life;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDADD2BA1BE6E2DF0002CC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Life-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peartreelabs.Life;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = Release;
 		};
@@ -706,6 +840,15 @@
 			buildConfigurations = (
 				BD009A2C1BDDAAEB0015AF7D /* Debug */,
 				BD009A2D1BDDAAEB0015AF7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDADD2B81BE6E2DF0002CC8C /* Build configuration list for PBXNativeTarget "LifeTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDADD2B91BE6E2DF0002CC8C /* Debug */,
+				BDADD2BA1BE6E2DF0002CC8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
