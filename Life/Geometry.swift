@@ -25,8 +25,8 @@ public struct Size: CustomStringConvertible, Equatable {
     // MARK: - Initializers
     
     public init(width: Int, height: Int) {
-        precondition(width > 0)
-        precondition(height > 0)
+        precondition(width >= 0)
+        precondition(height >= 0)
         
         self.width = width
         self.height = height
